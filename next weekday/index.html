@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar Related Things</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1>Return next date of Weekday</h1>
+          <form id="weekday">
+            <div class="form-group">
+              <label id="weekday">Enter the weekday (en Espanol) you want to find the next date of</label>
+              <input id="weekdayInput" type="text">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <div id="result">
+            <h2>The next <span id="inputtedWeekday"></span> will be <span id="nextDate"></span>.</h2>
+          </div>
+      </div>
+      <div class="span6">
+        <h1>Pick a day of the week and a month and find out the dates of that day</h1>
+          <form id="month-and-day">
+            <div class="form-group">
+              <label id="user-weekday">Enter another weekday (en Espanol)</label>
+              <input id="user-weekday" type="text">
+              <label id="user-month">Enter the month (en Espanol) to search in</label>
+              <input id="user-month" type="text">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        <div id="result2">
+          <h2>The following dates in <span id="desired-month"></span> all fall on <span id="desired-weekday"></span>:</h2>
+          <ul id="list-of-dates"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
